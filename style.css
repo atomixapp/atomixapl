@@ -1,10 +1,46 @@
-body{
   width: 100%;
   margin:0;
   background:#000;
   font-family:sans-serif;
   color:#fff;
 }
+/* ---------- Header moderno ---------- */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 15px 25px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 22px;
+  border-bottom: 2px solid #222;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #0ff;
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon-button:hover {
+  color: #0ff;
+}
+
 .main-container{
   padding:0px;
   margin:0;
