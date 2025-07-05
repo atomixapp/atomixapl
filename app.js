@@ -1,4 +1,3 @@
-// Auto-focus y navegación horizontal con flechas
 window.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".cards img");
   if (cards.length > 0) cards[0].focus();
