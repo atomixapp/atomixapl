@@ -16,30 +16,19 @@ body {
   display: flex;
   gap: 20px;
   margin-bottom: 30px;
+  height: 400px; /* altura fija igual para las dos imágenes */
 }
 
-.left-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.right-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.left-image {
+.left-image, .right-image {
   flex: 1;
-  aspect-ratio: 2/3; /* imagen vertical */
+  height: 100%;
 }
 
-.right-image {
-  flex: 2;
-  aspect-ratio: 16/9; /* imagen horizontal */
+.left-image img, .right-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Bottom row */
