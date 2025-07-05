@@ -2,27 +2,103 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Página de Películas</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="main-container">
-    <div class="top-section">
+
+    <!-- 2 pósters grandes -->
+    <section class="top-section">
       <div class="left-image">
-        <img src="https://image.tmdb.org/t/p/original/cYNTcnS2RSMeYTLlWQMCGVKYP8s.jpg" alt="Daniela Forever">
+        <img src="https://image.tmdb.org/t/p/original/obSTfLMgQhLcjPhjO0vvOue7i45.jpg" alt="Daniela Forever">
       </div>
       <div class="right-image">
-        <img src="https://image.tmdb.org/t/p/original/cYNTcnS2RSMeYTLlWQMCGVKYP8s.jpg" alt="Thunderbolts">
+        <img src="https://image.tmdb.org/t/p/original/ffQJClNiOpoc0ywxBgY6y1vBuxC.jpg" alt="Thunderbolts">
       </div>
-    </div>
+    </section>
 
-    <div class="bottom-row">
-      <img src="https://image.tmdb.org/t/p/original/wvr3Nh8TALWbmATrnlNg5Vhf6d3.jpg" alt="Harta">
-      <img src="https://image.tmdb.org/t/p/original/bu8K2DUXgsoS57pQMDmN0HQ7qJL.jpg" alt="Jefes de Estado">
-      <img src="https://image.tmdb.org/t/p/original/x2m4pwLTo7B9zXB7Iw4r2ON1FIf.jpg" alt="A Knight's War">
-      <img src="https://image.tmdb.org/t/p/original/psFXUUnYB9oi5vSGbPxZ2A1OXcW.jpg" alt="Bring Her Back">
-    </div>
+    <!-- Fila horizontal de banners -->
+    <section class="banner-row">
+      <img src="https://image.tmdb.org/t/p/original/sBGzERSMg0GTBbpjKHULxQCkIWz.jpg" alt="Harta">
+      <img src="https://image.tmdb.org/t/p/original/1xDev1aS6juHOuhpOIKKlczEdrW.jpg" alt="Jefes de Estado">
+      <img src="https://image.tmdb.org/t/p/original/q40cm0yiEgsTZNYZpsUULOKzHk5.jpg" alt="A Knight's War">
+      <img src="https://image.tmdb.org/t/p/original/f8FaWGOR1k7MiOOybNPbnxCRfYx.jpg" alt="Bring Her Back">
+    </section>
+
+    <!-- Carrusel 1 -->
+    <section class="carousel-section">
+      <h2 class="section-title">Las decisiones determinan el destino</h2>
+
+      <div class="carousel-wrapper">
+        <button class="arrow left">&#8249;</button>
+
+        <div class="carousel-container">
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/ucpg7CR6QSrDa6dcSU9RYGaNWRN.jpg" alt="Verdad o reto">
+            <p class="card-title">Verdad o reto</p>
+          </div>
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/uJQ7b6cVQeTlv2dgla8Uewqa7QZ.jpg" alt="Would You Rather">
+            <p class="card-title">Would You Rather</p>
+          </div>
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/7LtOVShXzjpZSt9b2b8am3g90kd.jpg" alt="Nerve">
+            <p class="card-title">Nerve: Un juego sin reglas</p>
+          </div>
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/gRB6weiHfM5Z2uzrGephAhpBJG3.jpg" alt="El hoyo">
+            <p class="card-title">El hoyo</p>
+          </div>
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/6f0WjVGgxTs8ucaAujOWG1YkmCL.jpg" alt="Se7en">
+            <p class="card-title">Se7en</p>
+          </div>
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/n02lX3sGFy8eEapDJF4Vl6nIUyl.jpg" alt="The Game">
+            <p class="card-title">The Game</p>
+          </div>
+        </div>
+
+        <button class="arrow right">&#8250;</button>
+      </div>
+    </section>
+
+    <!-- Carrusel 2 -->
+    <section class="carousel-section">
+      <h2 class="section-title">Biografía de Thunder</h2>
+
+      <div class="carousel-wrapper">
+        <button class="arrow left">&#8249;</button>
+
+        <div class="carousel-container">
+          <!-- Añade / cambia los pósters que quieras -->
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/1qDZE25pDD3bFizsB9BMRPOod4t.jpg" alt="Póster 1">
+            <p class="card-title">Película 1</p>
+          </div>
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/qLdnJ8Ih7XUeNKzJoZftIbGEnzE.jpg" alt="Póster 2">
+            <p class="card-title">Película 2</p>
+          </div>
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/jivBPjKJZvwUE5FQzlWVDfqy2zx.jpg" alt="Póster 3">
+            <p class="card-title">Película 3</p>
+          </div>
+          <div class="card">
+            <img src="https://image.tmdb.org/t/p/w500/hu3VfEf29sxNtimvUT0Vzbu9WFl.jpg" alt="Póster 4">
+            <p class="card-title">Película 4</p>
+          </div>
+        </div>
+
+        <button class="arrow right">&#8250;</button>
+      </div>
+    </section>
+
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
