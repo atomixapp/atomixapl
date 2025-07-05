@@ -87,9 +87,7 @@ main {
 }
 
 .hero {
-  position: relative;
-  height: 260px;
-  overflow: hidden;
+  height: 340px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -97,16 +95,24 @@ main {
 
 .carousel {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   height: 100%;
 }
 
-.carousel img {
-  width: 100%;
+.poster {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+}
+
+.poster img {
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-  flex: 1;
+  border-radius: 12px;
 }
 
 .dots {
@@ -127,7 +133,7 @@ main {
 }
 
 .gallery {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .gallery h2 {
@@ -137,18 +143,18 @@ main {
 
 .cards {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   overflow-x: auto;
   padding-bottom: 10px;
 }
 
 .cards img {
-  height: 190px;
-  aspect-ratio: 2/3;
+  height: 120px;
+  aspect-ratio: 16/9;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cards img:focus {
