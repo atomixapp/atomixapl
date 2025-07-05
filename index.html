@@ -7,21 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">MAG<span>IS</span> <small>TV</small></div>
-    <div class="top-icons">
-      <i>🔍</i>
-      <i>🎛</i>
-      <i>⏰</i>
-      <i>👤</i>
-      <i>🔔</i>
-      <i>📶</i>
-      <span class="clock">17:22</span>
-    </div>
-  </header>
-
-  <div class="layout">
-    <aside>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">MAG<span>IS</span> <small>TV</small></div>
       <nav>
         <ul>
           <li><button>📺 TV</button></li>
@@ -35,20 +23,22 @@
       </nav>
     </aside>
 
-    <main>
-      <section class="hero">
-        <div class="carousel">
-          <div class="poster">
-            <img src="https://image.tmdb.org/t/p/w500/8LI4YHOpXkAwhiZhPaFfL0G4nDd.jpg" alt="Daniela Forever" />
-          </div>
-          <div class="poster">
-            <img src="https://image.tmdb.org/t/p/w500/lZ2sOCMCcGaPppaXj0Wiv0S7A08.jpg" alt="Thunderbolts" />
-          </div>
+    <main class="main">
+      <header class="top-bar">
+        <div class="top-icons">
+          <i>🔍</i>
+          <i>🎛</i>
+          <i>⏰</i>
+          <i>👤</i>
+          <i>🔔</i>
+          <i>📶</i>
+          <span class="clock">17:22</span>
         </div>
-        <div class="dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-        </div>
+      </header>
+
+      <section class="carousel">
+        <img src="https://image.tmdb.org/t/p/w780/8LI4YHOpXkAwhiZhPaFfL0G4nDd.jpg" alt="Daniela Forever" />
+        <img src="https://image.tmdb.org/t/p/w780/lZ2sOCMCcGaPppaXj0Wiv0S7A08.jpg" alt="Thunderbolts" />
       </section>
 
       <section class="gallery">
