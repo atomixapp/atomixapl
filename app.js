@@ -1,16 +1,20 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".cards img");
-  if (cards.length > 0) cards[0].focus();
+const slides = document.querySelector(".slides");
+const dots = document.querySelectorAll(".dot");
+let index = 0;
+
+function showSlide(i) {
+  index = i;
+  slides.style.transform = `translateX(-${i * 100}%)`;
+
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[i].classList.add("active");
+}
+
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => showSlide(i));
 });
 
-document.addEventListener("keydown", (e) => {
-  const cards = Array.from(document.querySelectorAll(".cards img"));
-  const index = cards.indexOf(document.activeElement);
-
-  if (e.key === "ArrowRight") {
-    if (index !== -1 && cards[index + 1]) cards[index + 1].focus();
-  }
-  if (e.key === "ArrowLeft") {
-    if (index > 0 && cards[index - 1]) cards[index - 1].focus();
-  }
-});
+setInterval(() => {
+  index = (index + 1) % dots.length;
+  showSlide(index);
+}, 4000); // Cambia cada 4 segundos
