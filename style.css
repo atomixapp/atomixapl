@@ -14,8 +14,8 @@ body {
 /* Top section layout */
 .top-section {
   display: flex;
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: 6px;
+  margin-bottom: 6px;
   height: 400px; /* altura fija igual para las dos imágenes */
 }
 
@@ -34,14 +34,14 @@ body {
 /* Bottom row */
 .bottom-row {
   display: flex;
-  gap: 15px;
+  gap: 6px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .bottom-row img {
-  width: 220px;
-  height: 330px;
+  width: 295px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s;
