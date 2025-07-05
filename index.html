@@ -1,59 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MAGIS TV</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Películas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <aside class="sidebar">
-      <div class="logo">MAG<span>IS</span> <small>TV</small></div>
-      <nav>
-        <ul>
-          <li><button>📺 TV</button></li>
-          <li><button>👍 DESTACADOS</button></li>
-          <li class="active"><button>🎬 PELÍCULA</button></li>
-          <li><button>🎞 SERIES</button></li>
-          <li><button>🧒 KIDS</button></li>
-          <li><button>👹 ANIME</button></li>
-          <li><button>🧭 EXPLORAR</button></li>
-        </ul>
-      </nav>
-    </aside>
+  <main class="container">
+    <!-- Carrusel principal -->
+    <section class="carousel">
+      <div class="slides">
+        <img src="https://image.tmdb.org/t/p/w500/3NRSpKsvdy4NerB69CykMFqH0Gz.jpg" alt="Daniela Forever">
+        <img src="https://image.tmdb.org/t/p/w500/9p1K2iL2DQfcwYl8U0r3u1bGLXD.jpg" alt="Thunderbolts">
+        <img src="https://image.tmdb.org/t/p/w500/sEjS6dC1kWpdPygN0ACzRLnYkUd.jpg" alt="Otra imagen">
+      </div>
+      <div class="indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
 
-    <main class="main">
-      <header class="top-bar">
-        <div class="top-icons">
-          <i>🔍</i>
-          <i>🎛</i>
-          <i>⏰</i>
-          <i>👤</i>
-          <i>🔔</i>
-          <i>📶</i>
-          <span class="clock">17:22</span>
-        </div>
-      </header>
+    <!-- Fila de películas -->
+    <section class="movie-row">
+      <img src="https://image.tmdb.org/t/p/w500/yvTw6BtO0Y6KzSfh2N58soT0g2j.jpg" alt="Harta">
+      <img src="https://image.tmdb.org/t/p/w500/n3RPPxVXNw49Z9N0eAeYkYHuwQv.jpg" alt="Jefes de Estado">
+      <img src="https://image.tmdb.org/t/p/w500/bYcRO4c3YwEZXOmpZ7EBI6eTZoE.jpg" alt="Knight's War">
+      <img src="https://image.tmdb.org/t/p/w500/fF7z0c6FgqPuZYu5l8TSzRvP2mF.jpg" alt="Bring Her Back">
+    </section>
+  </main>
 
-      <section class="carousel">
-        <img src="https://image.tmdb.org/t/p/original/cYNTcnS2RSMeYTLlWQMCGVKYP8s.jpg" alt="Daniela Forever" />
-        <img src="https://image.tmdb.org/t/p/w780/lZ2sOCMCcGaPppaXj0Wiv0S7A08.jpg" alt="Thunderbolts" />
-      </section>
-
-      <section class="gallery">
-        <h2>Las decisiones determinan el destino</h2>
-        <div class="cards">
-          <img src="https://image.tmdb.org/t/p/original/wvr3Nh8TALWbmATrnlNg5Vhf6d3.jpg" alt="Harta" tabindex="0"/>
-          <img src="https://image.tmdb.org/t/p/original/xABhldZaMb6wfCH5oigV333OYnb.jpg" alt="Jefes de Estado" tabindex="0"/>
-          <img src="https://image.tmdb.org/t/p/original/cJCW78MZsyyXBKHo4V25WctK00V.jpg" alt="A Knight’s War" tabindex="0"/>
-          <img src="https://image.tmdb.org/t/p/original/zX8UkmCzZ1THMqFk3NTjH5TicnM.jpg" alt="Bring Her Back" tabindex="0"/>
-          <img src="https://image.tmdb.org/t/p/original/nHYa10RM9irGJU5BUpdyUt02fus.jpg" alt="Otra más" tabindex="0"/>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
