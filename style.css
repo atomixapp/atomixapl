@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(ellipse at top left, #111 30%, #000);
+  color: white;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ccc;
+}
+
+.logo small {
+  font-size: 0.8rem;
+  margin-left: 6px;
+}
+
+.top-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.clock {
+  font-size: 0.95rem;
+  margin-left: 5px;
+}
+
+.layout {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+aside {
+  width: 190px;
+  background-color: #111;
+  padding-top: 20px;
+}
+
+aside nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+aside nav ul li button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #aaa;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+aside nav ul li.active button,
+aside nav ul li button:hover {
+  color: #f60;
+  background-color: #222;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel img {
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  flex: 1;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #555;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #f60;
+}
+
+.gallery {
+  margin-top: 20px;
+}
+
+.gallery h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.cards img {
+  height: 160px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards img:focus {
+  outline: none;
+  transform: scale(1.08);
+  box-shadow: 0 0 12px #f60;
+}
