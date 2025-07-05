@@ -1,20 +1,14 @@
-const slides = document.querySelector(".slides");
-const dots = document.querySelectorAll(".dot");
-let index = 0;
+document.querySelectorAll('.carousel-wrapper').forEach(wrapper=>{
+  const container = wrapper.querySelector('.carousel-container');
+  const prev = wrapper.querySelector('.arrow.left');
+  const next = wrapper.querySelector('.arrow.right');
 
-function showSlide(i) {
-  index = i;
-  slides.style.transform = `translateX(-${i * 100}%)`;
+  const scrollByWidth = () => container.clientWidth - 40; // 40 = margen flechas
 
-  dots.forEach(dot => dot.classList.remove("active"));
-  dots[i].classList.add("active");
-}
-
-dots.forEach((dot, i) => {
-  dot.addEventListener("click", () => showSlide(i));
+  prev.addEventListener('click', () =>{
+    container.scrollBy({ left: -scrollByWidth(), behavior: 'smooth' });
+  });
+  next.addEventListener('click', () =>{
+    container.scrollBy({ left:  scrollByWidth(), behavior: 'smooth' });
+  });
 });
-
-setInterval(() => {
-  index = (index + 1) % dots.length;
-  showSlide(index);
-}, 4000); // Cambia cada 4 segundos
