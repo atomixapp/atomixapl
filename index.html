@@ -1,52 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Página de Películas</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación - GitHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+        header {
+            background-color: #1E2A47;
+            padding: 2rem 0;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Estilo para el botón de descarga */
+        .cta-button {
+            background-color: #50b3a2;
+            padding: 1.2rem 2.5rem;
+            font-size: 1.4rem;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+        .cta-button:hover {
+            background-color: #3f8c78;
+        }
+        .cta-button i {
+            font-size: 1.6rem;
+        }
+        .cta-button span {
+            font-weight: bold;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 4rem;
+        }
+        .feature {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            margin: 0 1rem;
+        }
+        .feature h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #1E2A47;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
-<header class="main-header">
-  <div class="logo">ATOMIX</div>
-  <div class="header-icons">
-    <button class="icon-button" id="user-btn" title="Usuario">
-      <i class="fas fa-user"></i>
-    </button>
-    <button class="icon-button" id="search-btn" title="Buscar">
-      <i class="fas fa-search"></i>
-    </button>
-  </div>
+<header>
+    <h1>ATOMIX</h1>
+    <p>Una aplicación moderna, funcional y llena de características útiles.</p>
 </header>
 
-  <div class="main-container">
+<section>
+    <div class="container">
+        <!-- Botón de descarga con icono de TV -->
+        <button class="cta-button" onclick="window.location.href='https://drive.google.com/file/d/1nW1HXvEkCXwFdTu0ykbKoUETzBehLNEu/view?usp=sharing'">
+            <i class="fas fa-tv"></i> <span>Descargar la Aplicación</span>
+        </button>
 
-    <!-- Imágenes grandes -->
-    <section class="top-section">
-      <div class="left-image">
-        <img src="https://image.tmdb.org/t/p/original/obSTfLMgQhLcjPhjO0vvOue7i45.jpg" alt="Daniela Forever" />
-      </div>
-      <div class="right-image">
-        <img src="https://image.tmdb.org/t/p/original/ffQJClNiOpoc0ywxBgY6y1vBuxC.jpg" alt="Thunderbolts" />
-      </div>
-    </section>
+        <h2>Características Principales</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Fácil de Usar</h3>
+                <p>Una interfaz intuitiva para que cualquier usuario pueda comenzar rápidamente.</p>
+            </div>
+            <div class="feature">
+                <h3>Rendimiento Óptimo</h3>
+                <p>Disfruta de una experiencia sin interrupciones, rápida y eficiente.</p>
+            </div>
+            <div class="feature">
+                <h3>Seguro</h3>
+                <p>Protección de tus datos con medidas de seguridad avanzadas.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Banners -->
-    <section class="banner-row">
-      <img src="https://image.tmdb.org/t/p/original/sBGzERSMg0GTBbpjKHULxQCkIWz.jpg" alt="Harta" />
-      <img src="https://image.tmdb.org/t/p/original/1xDev1aS6juHOuhpOIKKlczEdrW.jpg" alt="Jefes de Estado" />
-      <img src="https://image.tmdb.org/t/p/original/q40cm0yiEgsTZNYZpsUULOKzHk5.jpg" alt="A Knight's War" />
-      <img src="https://image.tmdb.org/t/p/original/f8FaWGOR1k7MiOOybNPbnxCRfYx.jpg" alt="Bring Her Back" />
-    </section>
+<footer>
+    <p>&copy; 2025 Atomix. Todos los derechos reservados.</p>
+</footer>
 
-    <!-- Carruseles generados automáticamente -->
-    <div id="carruseles-container"></div>
-
-  </div>
-
-<script src="app.js"></script>
 </body>
 </html>
